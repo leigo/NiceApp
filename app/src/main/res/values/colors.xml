@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="guide_page_1_bg">#ff2ec49b</color>
+    <color name="guide_page_2_bg">#ff3fb8d6</color>
+    <color name="guide_page_3_bg">#fffd7570</color>
+    <color name="white">#ffffffff</color>
+</resources>

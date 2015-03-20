@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:textSize="@dimen/guide_page_title_size"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:id="@+id/txt_nice_daily"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/guide_page_title_top_margin"
+        android:text="@string/meiyixia"
+        android:shadowColor="#ffe16a65"
+        android:shadowDx="1.0"
+        android:shadowDy="2.0"
+        android:shadowRadius="2.0"
+        android:drawableLeft="@drawable/new_icon_flower"
+        android:drawablePadding="5.0dip"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:textSize="@dimen/guide_page_sub_title_size"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/guide_page_sub_title_top_margin"
+        android:text="@string/guide_page_3"
+        android:shadowColor="#ffe16a65"
+        android:shadowDx="1.0"
+        android:shadowDy="2.0"
+        android:shadowRadius="2.0"
+        android:layout_below="@id/txt_nice_daily"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:id="@id/center_marker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true" />
+
+    <ImageView
+        android:id="@+id/img_flower1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5.0dip"
+        android:src="@drawable/new_graph_flower1"
+        android:layout_centerVertical="true" />
+
+    <ImageView
+        android:id="@+id/img_flower3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="75.0dip"
+        android:layout_marginBottom="45.0dip"
+        android:src="@drawable/new_graph_flower3"
+        android:layout_toLeftOf="@id/center_marker"
+        android:layout_above="@id/center_marker" />
+
+    <ImageView
+        android:id="@+id/img_flower5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32.0dip"
+        android:src="@drawable/new_graph_flower5"
+        android:layout_toLeftOf="@id/center_marker"
+        android:layout_below="@id/center_marker" />
+
+    <ImageView
+        android:id="@+id/img_flower6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="110.0dip"
+        android:src="@drawable/new_graph_flower6"
+        android:layout_toLeftOf="@id/center_marker"
+        android:layout_below="@id/center_marker" />
+
+    <ImageView
+        android:id="@+id/img_flower9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20.0dip"
+        android:src="@drawable/new_graph_flower9"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true" />
+
+    <ImageView
+        android:id="@+id/img_flower10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10.0dip"
+        android:src="@drawable/new_graph_flower10"
+        android:layout_above="@id/img_flower9"
+        android:layout_alignParentRight="true" />
+
+    <ImageView
+        android:id="@+id/img_flower8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50.0dip"
+        android:layout_marginTop="20.0dip"
+        android:src="@drawable/new_graph_flower8"
+        android:layout_toRightOf="@id/center_marker"
+        android:layout_above="@id/center_marker" />
+
+    <ImageView
+        android:id="@+id/img_flower7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="28.0dip"
+        android:layout_marginTop="20.0dip"
+        android:src="@drawable/new_graph_flower7"
+        android:layout_toRightOf="@id/center_marker"
+        android:layout_below="@id/center_marker" />
+
+    <ImageView
+        android:id="@+id/img_flower2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25.0dip"
+        android:layout_marginRight="60.0dip"
+        android:src="@drawable/new_graph_flower2"
+        android:layout_toLeftOf="@id/center_marker"
+        android:layout_below="@id/center_marker" />
+
+    <ImageView
+        android:id="@+id/img_flower4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/new_graph_flower4"
+        android:layout_centerInParent="true" />
+</RelativeLayout>

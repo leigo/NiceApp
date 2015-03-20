@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:textSize="@dimen/guide_page_title_size"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:id="@+id/txt_nice_daily"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/guide_page_title_top_margin"
+        android:text="@string/daily_niceapp"
+        android:shadowColor="#ff2ab088"
+        android:shadowDx="1.0"
+        android:shadowDy="2.0"
+        android:shadowRadius="2.0"
+        android:drawableLeft="@drawable/new_icon_nicedaily"
+        android:drawablePadding="5.0dip"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:textSize="@dimen/guide_page_sub_title_size"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/guide_page_sub_title_top_margin"
+        android:text="@string/guide_page_1"
+        android:shadowColor="#ff2ab088"
+        android:shadowDx="1.0"
+        android:shadowDy="2.0"
+        android:shadowRadius="2.0"
+        android:layout_below="@id/txt_nice_daily"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:id="@+id/img_cal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/new_graph_nicedaily"
+        android:layout_centerInParent="true" />
+
+    <ImageView
+        android:id="@+id/img_cal_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="75.0dip"
+        android:layout_marginTop="140.0dip"
+        android:src="@drawable/new_graph_nicedaily_icon"
+        android:layout_alignLeft="@id/img_cal"
+        android:layout_alignTop="@id/img_cal" />
+</RelativeLayout>
