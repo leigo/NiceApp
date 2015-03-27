@@ -4,16 +4,28 @@ import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
+import android.widget.TextView;
 
 import com.leigo.niceapp.R;
+import com.leigo.niceapp.animator.AnimatorUtils;
+import com.leigo.niceapp.view.GuidePopWindow;
 
 
 public class MainActivity extends ActionBarActivity {
+
+    private GuidePopWindow popWindow;
+    private TextView txt_guide;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        popWindow = new GuidePopWindow(this, getString(R.string.guide_comment), R.drawable.new_popover_down);
+
+        txt_guide = (TextView) findViewById(R.id.txt_guide);
     }
 
     @Override
@@ -36,5 +48,11 @@ public class MainActivity extends ActionBarActivity {
         }
 
         return super.onOptionsItemSelected(item);
+    }
+
+    @Override
+    public void onWindowFocusChanged(boolean hasFocus) {
+        super.onWindowFocusChanged(hasFocus);
+        popWindow.showAsDropDown(txt_guide);
     }
 }

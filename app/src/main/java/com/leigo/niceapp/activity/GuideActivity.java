@@ -203,7 +203,7 @@ public class GuideActivity extends FragmentActivity implements ViewPager.OnPageC
                 if (mLastPosition < position) {
                     AnimatorUtils.showBackgroundColorAnimation(mViewPager, getResources().getColor(R.color.guide_page_1_bg), getResources().getColor(R.color.guide_page_2_bg), ANIMATE_DURATION);
                 } else {
-                    AnimatorUtils.showBackgroundColorAnimation(mViewPager, R.color.guide_page_3_bg, R.color.guide_page_2_bg, ANIMATE_DURATION);
+                    AnimatorUtils.showBackgroundColorAnimation(mViewPager, getResources().getColor(R.color.guide_page_3_bg), getResources().getColor(R.color.guide_page_2_bg), ANIMATE_DURATION);
                 }
                 break;
             case 2:

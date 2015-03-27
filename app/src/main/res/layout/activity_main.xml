@@ -9,8 +9,16 @@
     tools:context=".MainActivity">
 
     <TextView
-        android:text="@string/hello_world"
+        android:textColor="@color/white"
+        android:id="@+id/txt_guide"
+        android:background="@drawable/new_popover_down"
+        android:paddingLeft="10.0dip"
+        android:paddingTop="10.0dip"
+        android:paddingRight="10.0dip"
+        android:paddingBottom="17.0dip"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:text="@string/guide_comment"
+        android:layout_centerHorizontal="true" />
 
 </RelativeLayout>

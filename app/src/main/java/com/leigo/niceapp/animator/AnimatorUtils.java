@@ -76,15 +76,12 @@ public class AnimatorUtils {
     }
 
     public static void animateShake(View view) {
-        float[] arrayOfFloat = new float[2];
-        arrayOfFloat[0] = view.getY();
-        arrayOfFloat[1] = (view.getY() + view.getContext().getResources().getDimensionPixelSize(R.dimen.shake_spacing));
-        ObjectAnimator localObjectAnimator = ObjectAnimator.ofFloat(view, "Y", arrayOfFloat);
-        localObjectAnimator.setInterpolator(new AccelerateDecelerateInterpolator());
-        localObjectAnimator.setRepeatMode(2);
-        localObjectAnimator.setRepeatCount(-1);
-        localObjectAnimator.setDuration(500L);
-        localObjectAnimator.start();
+        ObjectAnimator objectAnimator = ObjectAnimator.ofFloat(view, "Y", view.getY(), (view.getY() + view.getContext().getResources().getDimensionPixelSize(R.dimen.shake_spacing)));
+        objectAnimator.setInterpolator(new AccelerateDecelerateInterpolator());
+        objectAnimator.setRepeatMode(ValueAnimator.REVERSE);
+        objectAnimator.setRepeatCount(ValueAnimator.INFINITE);
+        objectAnimator.setDuration(500L);
+        objectAnimator.start();
     }
 
     public static void cancelAnimation(View view) {
